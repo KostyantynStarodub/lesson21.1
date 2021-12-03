@@ -1,0 +1,204 @@
+.container{
+    display: grid;
+    grid-template-areas:
+                        "header nav sidebar"
+                        "header content1 content1"
+                        "header row1 row2"
+                        "header content2 content2"
+                        "header footer footer" ;
+    grid-template-columns: 30% 1fr 1fr;
+    grid-template-rows: 3fr 1fr 2fr 5fr 2fr;
+    grid-gap: 10px;
+}
+.header{
+    background-color: coral;
+    grid-area: header;
+}
+.header img{
+    width: 450px;
+    height: 650px;
+}
+.nav{
+    background-color: cornflowerblue;
+    grid-area: nav;
+}
+.sidebar{
+    background-color: crimson;
+    grid-area: sidebar;
+}
+.content1{
+    background-color: cyan;
+    grid-area: content1;
+    height: 50px;
+}
+.content2{
+    background-color: darkblue;
+    grid-area: content2;
+}
+.row1{
+    background-color: darkgoldenrod;
+    grid-area: row1;
+}
+.row2{
+    background-color: darkgreen;
+    grid-area: row2;
+}
+.footer{
+    background-color: darkmagenta;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer i{
+    font-size: 30px;
+}
+.fa-telegram{
+    color: rgb(91, 184, 213);
+}
+.fa-discord{
+    color: rgb(0, 32, 102);
+}
+.fa-instagram{
+    color: hotpink
+}
+.fa-github{
+    color:  rgb(76, 9, 99);
+}
+.mom{
+    display: grid;
+    grid-template-areas: 
+                        "h k d m rk dm c"
+                        "h v w l rk dm c"
+                        "n v w l rk dm c"
+                        "n r g a rk dm c";
+    grid-template-columns: 40% 3fr 3fr 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+.h{
+    /* background-color: darkorchid; */
+    grid-area: h;
+}
+.h img{
+    width: 650px;
+    height: 370px;
+}
+.n{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    grid-area: n;
+}
+.n h1{
+    font-size: 50px;
+}
+.n p{
+    font-size: 30px;
+}
+.k{
+    grid-area: k;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.k img{
+    width: 200px;
+    height: 200px;
+}
+.d{
+    grid-area: d;
+    display: flex;
+    justify-content: center;
+}
+.d img{
+    width: 200px;
+    height: 200px;
+}
+.m{
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+}
+.m img{
+    width: 200px;
+    height: 200px;
+}
+.rk{
+    background: rgb(0,7,36);
+    background: linear-gradient(45deg, rgba(0,7,36,1) 5%, rgba(22,0,36,1) 22%, rgba(93,9,121,1) 43%, rgba(255,0,181,1) 100%);
+    grid-area: rk;
+}
+.dm{
+    background: rgb(131,58,180);
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+    grid-area: dm;
+}
+.c{
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(125,135,190,1) 51%, rgba(253,187,45,1) 100%);;
+    grid-area: c;
+}
+.v{
+    grid-area: v;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.w{
+    grid-area: w;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.l{
+    grid-area: l;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.knopka_price a{
+    padding: 10px 10px;
+    border: black 1px solid;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    background-color: blueviolet;
+    transition: 1s;
+}
+.knopka_price a:hover{
+    padding: 15px 15px;
+}
+.item1, .item2{
+    text-decoration: line-through;
+}
+.r{
+    grid-area: r;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r i, .g i, .a i{
+    font-size: 80px;
+    transition: 1s;
+}
+.r i:hover, .g i:hover, .a i:hover{
+    font-size: 120px;
+}
+.g{
+    grid-area: g;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
